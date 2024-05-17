@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(17, 17, 17);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 65rem;
+  padding: 1rem;
+  background-color: rgb(19, 19, 19);
+  border-radius: 20px;
+  border: 1px solid lightgrey;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  color: white;
+  flex-wrap: wrap;
+}
+
+.background img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 5rem;
+  flex: 1;
+}
+
+.content {
+  margin-bottom: 2rem;
+}
+
+.content h1 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.content p {
+  color: #606060;
+  font-size: 0.9rem;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.input-field {
+  padding: 0.9rem 1rem;
+  margin-bottom: 0.5rem;
+  background-color: #242424;
+  outline: none;
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
+
+.input-field:focus {
+  color: white;
+  outline: 1px solid orange;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin: 0.3rem 0 1.5rem;
+  font-size: 0.9rem;
+}
+
+.checkbox {
+  margin-right: 0.5rem;
+}
+
+.checkbox:checked {
+  background-color: orange;
+  border-color: orange;
+}
+
+.terms-use {
+  color: orange;
+}
+
+.signup-btn {
+  padding: 0.9rem 1rem;
+  background-color: orange;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.signup-btn:hover {
+  background: rgb(177, 115, 0);
+}
+
+.social-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.social-icons {
+  margin-bottom: 1rem;
+}
+
+.social-icons i {
+  font-size: 1rem;
+  margin: 1rem 0.5rem;
+  color: white;
+  border: 1px solid rgb(53, 53, 53);
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 8px;
+  transition: 0.5s;
+}
+
+.social-icons i:hover {
+  transform: scale(1.1);
+}
+
+.login-link {
+  color: orange;
+  text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    margin-inline: 1rem;
+  }
+
+  .content-section {
+    padding: 2rem;
+  }
+
+  .content h1 {
+    font-size: 1rem;
+  }
+
+  .content p {
+    font-size: 0.6rem;
+  }
+
+  .checkbox-container {
+    font-size: 0.6rem;
+  }
+
+  .input-field {
+    padding: 0.8rem;
+  }
+
+  .signup-btn {
+    padding: 0.8rem;
+  }
+
+  .background img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    border: none;
+  }
+
+  .background img {
+    display: none;
+  }
+
+  .content-section {
+    padding: 1.5rem;
+  }
+
+  .content h1 {
+    font-size: 1.3rem;
+  }
+
+  .checkbox-container {
+    font-size: 0.9rem;
+  }
+
+  .content p {
+    font-size: 0.8rem;
+  }
+
+  .input-field {
+    padding: 0.8rem;
+  }
+
+  .signup-btn {
+    padding: 0.8rem;
+  }
+
+  .background img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 468px) {
+  .container {
+    flex-direction: column;
+    border: none;
+  }
+
+  .background img {
+    display: none;
+  }
+
+  .content-section {
+    padding: 1.5rem;
+  }
+
+  .content h1 {
+    font-size: 1rem;
+  }
+
+  .content p {
+    font-size: 0.7rem;
+  }
+
+  .checkbox-container {
+    font-size: 0.6rem;
+  }
+
+  .input-field {
+    padding: 0.8rem;
+  }
+
+  .signup-btn {
+    padding: 0.8rem;
+  }
+
+  .background img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
